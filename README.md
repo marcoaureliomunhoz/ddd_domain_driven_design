@@ -39,7 +39,8 @@ Bases do DDD:
 
 **Fontes** 
 
-- Livro Domain-Drive Design - Atacando as Complexidades no Coração do Software (Eric Evans)
+- Livro Domain-Driven Design - Atacando as Complexidades no Coração do Software (Eric Evans)
+- Livro Implementando Domain-Driven Design (Vaughn Vernon)
 - https://martinfowler.com
 - http://domainlanguage.com (Eric Evans)
 - https://www.youtube.com/watch?v=dnUFEg68ESM (Eric Evans)
