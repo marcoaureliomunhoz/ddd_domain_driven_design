@@ -6,7 +6,7 @@ A orientação a objetos é uma ótima ferramenta para o desenvolvimento de soft
 
 O problema é que durante muitos anos a comunidade focou pontos importantes do desenvolvimento de um software, mas deu pouca atenção ao ponto central, que é o domínio do problema. Essa escolha gerou uma série de avanços aos pontos priorizados, mas gerou uma série de problemas no ponto central de sistemas empresariais, que num dado momento começou a contaminar todos os pontos de desenvolvimento. E é por isso que convivemos ainda hoje com softwares legados, até mesmo de baixa/média complexidade, que exigem servidores parrudos, infraestrutura de auto custo e que muitas vezes mais trazem prejuízos do que lucros. 
 
-Assim como DDD, os princípios SOLID, também são conceitos fundamentais no desenvolvimento de software. Diferentemente do DDD, que pode ser aplicado somente em projetos complexos, os princípios SOLID podem e devem ser aplicados em todo e qualquer projeto de software orientado a objetos.
+Assim como DDD, os princípios SOLID, também são conceitos fundamentais no desenvolvimento de software. Diferentemente do DDD, que deve ser aplicado somente em projetos complexos, os princípios SOLID podem e devem ser aplicados em todo e qualquer projeto de software orientado a objetos.
 
 Não é fácil projetar software com qualidade, pois durante anos fomos orientados a projetar sem começar pela análise do ponto central (o problema do negócio) e sim a começar pela análise de interface com o usuário (UI) ou pelo modelo relacional de dados (MER) e aí vai. 
 
@@ -18,7 +18,7 @@ Como o próprio Eric Evans fala, DDD é framework. É um framework pois não é 
 
 Inclusive não é possível desenvolver software de qualidade só com a aplicação correta dos fundamentos do paradigma e com receitas técnicas (tijolos de construção). É necessário também preocupar-se com o processo. Portanto projeto sem processo certamente vai falhar. Por isso Eric Evans fala muito em processo ágil.
 
-Tijolos de Construção:
+**Tijolos de Construção:**  
 - Entidade (Entity Object)
 - Agregado (Aggregate Object)
 - Objeto Valor (Value Object)
@@ -31,9 +31,14 @@ Tijolos de Construção:
 - Módulos/Pacotes
 - Arquitetura em Camadas 
 
-Bases do DDD:
+**Bases do DDD:**  
 - O projeto deve ser digirido pelo modelo do domínio, ou seja, devemos priorizar a modelagem do ponto central.
 - O modelo deve ser baseado em uma linguaguem onipresente (ubíqua), ou seja, todos os interessados devem falar a mesma lingua.
+
+**Cuidados:**   
+- O DDD nos encoraja a aplicarmos o princípio da responsabilidade única (SRP) que promove alta coesão. Isso é bom, pois torna o software mais sólido (menos frágil). Porém temos que tomar cuidado e evitar a integração extrema entre contextos com o preguiçoso argumento de reaproveitar código (isso gera uma baixa coesão implícita). A integração deve ser evitada pois promove forte/alto acoplamento, sendo que um dos pontos chaves da orientação a objetos deve ser a busca contínua por baixo/fraco acoplamento.
+
+> Ao aplicarmos o DDD temos que pensar sempre neste propósito: Alta Coesão + Baixo Acoplamento
 
 --- 
 
